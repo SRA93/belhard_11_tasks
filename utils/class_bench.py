@@ -40,6 +40,7 @@ def class_bench(cls):
         func_name = str(func.__name__)
 
         if func_name.startswith('__'):
+
             continue
 
         else:

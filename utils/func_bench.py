@@ -4,12 +4,14 @@ import inspect
 
 
 def get_module_name(func):
+
     return inspect.getmodule(func)
 
 
 def func_bench(func):
 
     def wrapper(*args, **kwargs):
+
         start_time = time.time()
         func(*args, **kwargs)
         end_time = time.time()
